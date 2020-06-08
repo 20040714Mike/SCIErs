@@ -1,0 +1,52 @@
+<scroll-view scroll-y class="scrollPage">
+	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+		<view class="cu-bar bg-white solid-bottom">
+			<view class="action text-center">
+				<text class="text-xl text-orange">Today {{today.date}}</text>
+			</view>
+		</view>
+		<view class="cu-item menuBorder" wx:for="{{today.items}}">
+			{{item.value}}
+		</view>
+		<view class="cu-item menuBorder text-black" wx:for="{{dailyBulletin.items}}">
+			  {{item.subject}} - {{item.applicant}}
+		</view>
+	</view>
+	<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+		<view class="cu-bar bg-white solid-bottom">
+			<view class="action">
+				<button class="cu-btn round light bg-orange" bindtap="changeDayButton" data-type="0">
+					{{"<"}}</button>
+			</view>
+			<view class="action text-center">
+				<picker mode="date" value="{{theday.date}}" start="2010-01-01" end="2040-12-31" bindchange="DateChange">
+					<view class="picker">
+						<text class="text-xl text-orange">{{theday.date}}</text>
+					</view>
+				</picker>
+			</view>
+			<view class="action">
+				<button class="cu-btn round light bg-orange" bindtap="changeDayButton" data-type="1">
+					{{">"}}</button>
+			</view>
+		</view>
+		<view class="cu-item menuBorder" wx:for="{{theday.items}}">
+			{{item.value}}
+		</view>
+	</view>
+</scroll-view>
+
+<view wx:if="{{networkErr}}" class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+	<view class="cu-bar bg-white solid-bottom">
+		<view class="action">
+		</view>
+		<view class="action text-red">
+			Network Error, cannot connect to the server
+		</view>
+		<view class="action">
+		</view>
+	</view>
+	<view class="cu-item menuBorder" wx:for="{{theday.items}}">
+		{{item.value}}
+	</view>
+</view>

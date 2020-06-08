@@ -1,0 +1,72 @@
+<page-meta>
+  <navigation-bar
+    title="Homework"
+  />
+</page-meta>
+<view>
+	<view class="cu-list menu card-menu margin-top">
+		<view class="padding-sm bg-white solids-bottom" wx:for="{{homework}}">
+			<view class="flex  p-xs mb-sm">
+				<view class="flex-sm padding-sm margin-xs radius bg-red" bindtap="doneHomework" data-id="{{item.done_id}}">
+					{{item.duedate}}
+				</view>
+				<view class="flex-sm padding-sm margin-xs radius bg-red light">
+					{{item.course}}
+				</view>
+			</view>
+			<view class="flex-sub p-xs padding-xs mb-sm">
+				<view class="text-left">
+					<text class="">{{item.title}}</text>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<!-- 加载时浮层 -->
+<view class='cu-load load-modal' wx:if="{{loadModal}}">
+	<view class='cuIcon-writefill text-orange'></view>
+	<view class='gray-text'>Loading...</view>
+</view>
+
+
+<!-- 确认完成作业浮层 -->
+<view class="cu-modal {{confirmDoneModal==true?'show':''}}">
+	<view class="cu-dialog">
+		<view class="cu-bar bg-white justify-end">
+			<view class="content"></view>
+			<view class="action" bindtap="hideModal">
+				<text class="cuIcon-close text-red"></text>
+			</view>
+		</view>
+		<view class="padding-xl">
+			<text>
+      This means you had finished this homework
+			It will not appear after you click yes.
+			Are you sure to continue?
+			</text>
+		</view>
+		<view class="cu-bar bg-white justify-end">
+			<view class="action">
+				<button class="cu-btn line-red text-red" bindtap="hideModal">Cancel</button>
+				<button class="cu-btn bg-red margin-left" bindtap="doneHomeworkSure">Yes</button>
+			</view>
+		</view>
+	</view>
+</view>
+
+<!-- 网络错误提示 -->
+<view wx:if="{{networkErr}}" class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+	<view class="cu-bar bg-white solid-bottom">
+		<view class="action">
+		</view>
+		<view class="action text-red">
+			Network Error, cannot connect to the server
+		</view>
+		<view class="action">
+		</view>
+	</view>
+	<view class="cu-item menuBorder" wx:for="{{theday.items}}">
+		{{item.value}}
+	</view>
+</view>

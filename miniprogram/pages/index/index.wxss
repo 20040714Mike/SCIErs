@@ -1,0 +1,106 @@
+
+
+.sciers-page {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+
+.sciers-main {
+  padding: 20px;
+  width: 100%;
+}
+.home {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px 20px;
+  background: #f8f8f8;
+}
+
+.home__title,
+.home__desc {
+  padding-left: 16px;
+  font-weight: normal;
+  line-height: 1;
+  user-select: none;
+}
+
+.home__title {
+  margin: 0 0 16px;
+  font-size: 30px;
+}
+
+.home__image,
+.home__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.home__image {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.home__text {
+  font-weight: 500;
+}
+
+.home__title .home--small {
+  font-size: 24px;
+}
+
+.home__desc {
+  margin: 0 0 40px;
+  color: rgba(69, 90, 100, 0.6);
+  font-size: 14px;
+}
+
+.my-button {
+  --button-border-radius: 10px;
+}
+
+.buttom-list {
+  justify-content: space-between;
+}
+
+.block__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(69, 90, 100, .6);
+}
+
+.block {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  margin: 0 0 15px 0;
+}
+.block1 {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  margin: 0 10px 15px 0;
+}
+.block2 {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  margin: 0 0 15px 10px;
+}
+.block__content {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.content__tag {
+  padding: 0 4px;
+}
+
+
+.button-icon {
+  font-size: 1.5rem;
+}
