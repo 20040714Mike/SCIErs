@@ -1,4 +1,0 @@
-/* miniprogram/pages/login/login.wxss */
-.hide {
-  display: none
-}

@@ -1,13 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/assessment/assessment",
-    "pages/timetable/timetable",
-    "pages/login/login",
-    "pages/calendar/calendar",
-    "pages/emptyClassroom/emptyClassroom",
-    "pages/homework/homework",
-    "pages/emptyClassroom/classroomDetail"
+    "pages/dashboard/dashboard"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -16,7 +9,6 @@
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {
-    "cu-custom": "/colorui/components/cu-custom"
   },
   "sitemapLocation": "sitemap.json"
 }
