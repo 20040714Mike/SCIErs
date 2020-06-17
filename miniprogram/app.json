@@ -2,13 +2,17 @@
   "pages": [
     "pages/dashboard/dashboard"
   ],
+  "themeLocation":"theme.json",
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "SCIErs",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundColorBottom": "@bgColorBottom",
+    "navigationBarTitleText": "SCIErs"
   },
-  "usingComponents": {
-  },
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json",
+  "darkmode": true
 }

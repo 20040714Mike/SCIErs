@@ -1,3 +1,12 @@
 <!--miniprogram/pages/dashboard.wxml-->
-<text class="fa fa-user"></text>
+<text class="fa fa-user text-primary"></text>
+<view class="cu-tag round">默认</view>
 
+  <view class="cu-capsule round">
+    <view class="cu-tag bg-tag1 sm">
+      说明
+    </view>
+    <view class="cu-tag bg-tag2 sm">
+      123
+    </view>
+  </view>
