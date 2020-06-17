@@ -1,11 +1,25 @@
 // miniprogram/pages/dashboard.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    currentTab: 0
+  },
+  // Tabs - Swip
+  swiperTab: function (e) {
+    var that = this;
+    that.setData({
+      currentTab: e.detail.current
+    });
+  },
+  // Tabs - Cick
+  clickTab: function (e) {
+    var that = this;
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
   },
 
   /**

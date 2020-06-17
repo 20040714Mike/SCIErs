@@ -1,1 +1,25 @@
-/* miniprogram/pages/dashboard.wxss */
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  height: 34px;
+  line-height: 34px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.swiper-tab-item {
+  width: 30%;
+  color: var(--color-font);
+}
+
+.active {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+swiper {
+  text-align: center;
+  font-size: 14px;
+}

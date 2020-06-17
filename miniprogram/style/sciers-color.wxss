@@ -10,7 +10,7 @@ page {
   
 
   background-color: var(--color-bg);
-  --color-primary: rgb(127, 33, 29);
+  --color-primary: rgb(147, 53, 49);
   --color-success: rgb(52, 199, 89);
   --color-warning: rgb(255, 149, 0);
   --color-error: rgb(255, 59, 48);
@@ -30,7 +30,7 @@ page {
 
   /* Global Color Setting (DarkMode) */
   page {
-    --color-primary: rgb(167, 73, 69);
+    --color-primary: rgb(194, 69, 65);
     --color-success: rgb(48, 209, 88);
     --color-warning: rgb(255, 159, 10);
     --color-error: rgb(255, 69, 58);
