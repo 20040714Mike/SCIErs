@@ -51,7 +51,7 @@ Tags,from color-ui
 .cu-tag.sm {
 	font-size:10px;
 	padding:0px 6px;
-	height:22px;
+	height:18px;
 }
 .cu-capsule {
 	display:inline-flex;

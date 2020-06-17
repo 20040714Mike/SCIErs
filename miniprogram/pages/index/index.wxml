@@ -1,11 +1,40 @@
 <!--miniprogram/pages/index/index.wxml-->
 <view class='page'>
-	<view class='block'>
-		<text class='block_title'>Oneline Block</text>
-		<text class='block_content'>Today, Next Class</text>
+	<view class='home'>
+		<view class="home_title" bindlongpress="logout">
+			<view class='oneline'>Alllllllllllllllllllllllllllllllllllllllllllllan </view>
+		</view>
+		<view class="home_desc">
+			SCIE graduates of 2022 - Metal 3
+		</view>
+		<view class='block'>
+			<text class='block_title'>Next Class</text>
+			<view class='block_content'>
+				<text>IGCSE Cooking</text>
+				<view class="cu-capsule round">
+					<view class="cu-tag bg-tag1 sm">
+						?
+					</view>
+					<view class="cu-tag bg-tag2 sm">
+						233
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class='block'>
+			<text class='block_title'>Today's Exam</text>
+			<view class='block_content'>
+				<text>[10:00] Thinking Skills</text>
+				<view class="cu-capsule round">
+					<view class="cu-tag bg-tag1 sm">
+						G2 Mock
+					</view>
+					<view class="cu-tag bg-tag2 sm">
+						213
+					</view>
+				</view>
+			</view>
+		</view>
 	</view>
-  	<view class='block'>
-		<text class='block_title'>Long Block</text>
-		<text class='block_content'>Today,\n a \n b \n c  Next Class</text>
-	</view>
+
 </view>

@@ -1,10 +1,10 @@
-
-.page{
+.page {
   margin: 20px 20px;
   font-size: 16px;
   line-height: 22px;
   --block-radius: 24px;
 }
+
 .block {
   background-color: var(--color-bg-float);
   border-radius: var(--block-radius);
@@ -20,7 +20,33 @@
 }
 
 .block_content {
-  font-size: 1rem;
+  font-size: 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--color-bg-float);
+  border-radius: var(--block-radius);
+  padding: 12px 20px 15px;
+  margin: 0 0 15px 0;
+}
+
+.card_title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-gray1);
+}
+
+.card_content {
+  display: flex;
+}
+
+.oneline {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
 }

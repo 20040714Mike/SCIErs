@@ -1,1 +1,30 @@
 /* miniprogram/pages/index/index.wxss */
+.content_tag {
+  padding: 0 4px;
+}
+.home {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 8px 0;
+}
+.home_title,
+.home_desc {
+  padding-left: 8px;
+  font-weight: normal;
+  line-height: 1;
+  user-select: none;
+}
+
+.home_title {
+  margin: 0 0 16px;
+  font-size: 30px;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.home_desc {
+  margin: 0 0 40px;
+  color: var(--color-gray1);
+  font-size: 14px;
+}
