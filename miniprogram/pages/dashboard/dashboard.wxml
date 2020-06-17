@@ -1,2 +1,3 @@
 <!--miniprogram/pages/dashboard.wxml-->
-<text>miniprogram/pages/dashboard.wxml</text>
+<text class="fa fa-user"></text>
+
