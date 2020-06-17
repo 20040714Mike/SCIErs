@@ -1,0 +1,11 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class='page'>
+	<view class='block'>
+		<text class='block_title'>Oneline Block</text>
+		<text class='block_content'>Today, Next Class</text>
+	</view>
+  	<view class='block'>
+		<text class='block_title'>Long Block</text>
+		<text class='block_content'>Today,\n a \n b \n c  Next Class</text>
+	</view>
+</view>

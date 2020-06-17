@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/dashboard/dashboard"
   ],
-  "themeLocation":"theme.json",
+  "themeLocation": "theme.json",
   "window": {
     "navigationBarBackgroundColor": "@navBgColor",
     "navigationBarTextStyle": "@navTxtStyle",

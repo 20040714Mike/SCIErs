@@ -1,5 +1,6 @@
 @import './style/sciers-color.wxss';
 @import './style/cu-tags.wxss';
+@import './style/sciers-main.wxss';
 
 /* Font-awesome */
 @import "./style/font-awesome.wxss";
